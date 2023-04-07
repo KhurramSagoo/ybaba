@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest operators</title>
     <script>
-        function sum(){
+        function sum(name,course, ...arguments){
             console.log(arguments);
-        }
+            let sum=0;
+            for(let i in arguments){
+                sum +=arguments [i];
+                       }
+        document.write(sum + "<br>")
+                    }
 
+                    sum ("this is the sum" , 20,30,35,40,45)
+                    sum("ali", "b.com", 40,50,65,33,48,86)
 
 
 
